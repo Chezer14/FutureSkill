@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Anuphan', sans-serif;
+}
+
+html, body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header, main, #footerContent {
+    padding: 0 2rem;
+
+    @media (800px <= width) {
+        & {
+            padding: 2rem 20vw;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #d5d5d5;
+    height: 180px;
+}
+
